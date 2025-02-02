@@ -196,7 +196,7 @@ const BREW_PRODUCTS = [
     name: "French Press",
     price: 1000,
     priceSuffix: "USD",
-    img: "brew-1.jpg",
+    img: "brew-4.jpg",
     description: `A traditional method for brewing coffee, the French press delivers a bold, full-bodied cup by steeping coarse coffee grounds in hot water before pressing them with a mesh plunger.`,
     usageTips: [
       "Use coarse ground coffee to avoid sediment in your cup.",
@@ -210,7 +210,7 @@ const BREW_PRODUCTS = [
     name: "Chemex",
     price: 1000,
     priceSuffix: "USD",
-    img: "brew-1.jpg",
+    img: "brew-5.jpg",
     description: `Known for its sleek design, the Chemex brews clean, bright coffee using special paper filters that remove oils and sediment.`,
     usageTips: [
       "Use medium-coarse grounds for a well-balanced cup.",
@@ -224,7 +224,7 @@ const BREW_PRODUCTS = [
     name: "Vietnamese Phin Filter",
     price: 1000,
     priceSuffix: "USD",
-    img: "brew-1.jpg",
+    img: "brew-6.jpg",
     description: `This compact metal filter delivers robust, flavorful Vietnamese-style coffee. It sits directly on the cup, slowly dripping hot water through the grounds for a smooth, rich brew.`,
     usageTips: [
       "Use medium-coarse coffee grounds for the best flavor.",
