@@ -1,0 +1,31 @@
+/* ABOUT SECTION START */
+.special .special-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  margin-bottom: 8rem;
+}
+
+.special .special-container h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.special .special-container p {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+}
+
+.special .special-content {
+  text-align: left;
+  width: 600px;
+}
+
+.special .special-img {
+  width: 45rem;
+  height: 45rem;
+  object-fit: cover;
+  border-radius: 10px;
+}
+/* ABOUT SECTION END */

@@ -1,3 +1,4 @@
+/* ABOUT SECTION START */
 .about .about-container {
   display: flex;
   justify-content: center;
@@ -25,6 +26,7 @@
   height: 45rem;
   border-radius: 10px;
 }
+/* ABOUT SECTION END */
 
 /* CONTACT SECTION START */
 
