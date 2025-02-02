@@ -1,451 +1,348 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,400&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="../css/globals.css" />
-    <link rel="stylesheet" href="../css/layout.css" />
-    <link rel="stylesheet" href="../css/product-list.css" />
-    <link rel="stylesheet" href="../css/grid.css" />
-    <link rel="stylesheet" href="../css/slideshow.css" />
-    <link rel="stylesheet" href="../css/utility.css" />
-    <link rel="stylesheet" href="../css/toast.css" />
-    <title>Document</title>
-  </head>
-  <body class="poppins-regular">
-    <!-- NAVBAR START -->
-    <div class="nav-wrapper">
-      <nav>
-        <div class="logo-container">
-          <img src="../images/logo.png" alt="" height="40px" />
-          Bean Boutique
-        </div>
-        <div id="navbar-menu-toggle">
-          <img
-            src="../images/menu.svg"
-            alt="Navbar menu"
-            width="30"
-            height="30"
-            class="navbar-menu-icon"
-          />
-        </div>
-        <ul class="nav-links" id="nav-links">
-          <li>
-            <a href="./index.html" class="nav-link animated">Home</a>
-          </li>
-          <li>
-            <a href="./coffee-selection.html" class="nav-link animated"
-              >Coffee Selection</a
-            >
-          </li>
-          <li>
-            <a href="./brewing-equipment.html" class="nav-link active"
-              >Brewing Equipment</a
-            >
-          </li>
-          <li>
-            <a href="./events-workshops.html" class="nav-link animated"
-              >Events & Workshops</a
-            >
-          </li>
-          <li>
-            <a href="./special-offers.html" class="nav-link animated"
-              >Special Offers</a
-            >
-          </li>
-          <li>
-            <a href="./cart.html" class="nav-link animated">Cart</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-    <!-- NAVBAR END -->
 
-    <!-- HERO SECTION START -->
-    <header class="header">
-      <div class="overlay"></div>
-      <div class="header-content">
-        <h1>Check out our high quality brewing equipment</h1>
-        <p>
-          Discover the perfect brew at Bean Boutique. From bold blends to
-          exceptional single-origin beans, our curated selection brings you
-          flavors from renowned regions. Whether you're a seasoned barista or a
-          newcomer, our premium brewing tools help make every cup memorable.
-        </p>
-        <div class="centered-content">
-          <div class="search">
-            <a href="#" class="search-icon-container">
-              <img
-                src="../images/search.svg"
-                alt="search icon"
-                class="search-icon"
-              />
-            </a>
-            <input type="text" placeholder="Search..." class="search-input" />
-          </div>
-        </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../css/globals.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/product-list.css">
+  <link rel="stylesheet" href="../css/grid.css">
+  <link rel="stylesheet" href="../css/slideshow.css">
+  <link rel="stylesheet" href="../css/utility.css">
+  <link rel="stylesheet" href="../css/toast.css">
+  <title>Document</title>
+</head>
+
+<body class="poppins-regular">
+  <!-- NAVBAR START -->
+  <div class="nav-wrapper">
+    <nav>
+      <div class="logo-container">
+        <img src="../images/logo.png" alt="" height="40px">
+        Bean Boutique
       </div>
-    </header>
-    <!-- HERO SECTION END -->
-
-    <!-- PRODUCT SECTION START -->
-    <section class="products">
-      <h2 class="sub-heading">Our Brewing Equipments</h2>
-      <div class="grid">
-        <div class="grid-item">
-          <div class="grid-card">
-            <img src="../images/brew-1.jpg" alt="" class="grid-card-img" />
-            <div class="grid-card-overlay">
-              <div>
-                <h3>Coffee Maker (Small)</h3>
-                <p>
-                  Perfect for brewing just the right amount for 1 to 3 cups,
-                  these compact machines fit neatly into small kitchens or
-                  office spaces. Many come with programmable settings and auto
-                  shut-off for added convenience.
-                </p>
-              </div>
-              <div>
-                <a
-                  href="./brewing-details.html?id=7"
-                  href=""
-                  class="grid-card-btn btn-secondary"
-                  >See more</a
-                >
-                <a class="grid-card-btn" onclick="addToCart(7)">
-                  <img
-                    src="../images/cart-white.svg"
-                    alt=""
-                    height="20"
-                    class="grid-cart-icon"
-                  />
-                  Add to cart</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="grid-item">
-          <div class="grid-card">
-            <img src="../images/brew-2.jpg" alt="" class="grid-card-img" />
-            <div class="grid-card-overlay">
-              <div>
-                <h3>Coffee Maker (Large)</h3>
-                <p>
-                  Ideal for families or gatherings, large coffee makers brew
-                  between 8 and 12 cups in one go. They often feature brew
-                  timers, strength settings, and thermal carafes to maintain
-                  heat.
-                </p>
-              </div>
-              <div>
-                <a
-                  href="./brewing-details.html?id=8"
-                  class="grid-card-btn btn-secondary"
-                  >See more</a
-                >
-                <a class="grid-card-btn" onclick="addToCart(8)">
-                  <img
-                    src="../images/cart-white.svg"
-                    alt=""
-                    height="20"
-                    class="grid-cart-icon"
-                  />
-                  Add to cart</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="grid-item">
-          <div class="grid-card">
-            <img src="../images/brew-3.jpg" alt="" class="grid-card-img" />
-            <div class="grid-card-overlay">
-              <div>
-                <h3>Expresso Maker</h3>
-                <p>
-                  Designed for those who love bold, strong shots, espresso
-                  makers deliver café-quality espresso with high-pressure
-                  brewing systems. Many models have steam wands for frothing
-                  milk, perfect for lattes and cappuccinos.
-                </p>
-              </div>
-              <div>
-                <a
-                  href="./brewing-details.html?id=9"
-                  class="grid-card-btn btn-secondary"
-                  >See more</a
-                >
-                <a class="grid-card-btn" onclick="addToCart(9)">
-                  <img
-                    src="../images/cart-white.svg"
-                    alt=""
-                    height="20"
-                    class="grid-cart-icon"
-                  />
-                  Add to cart</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="grid-item">
-          <div class="grid-card">
-            <img src="../images/brew-4.jpg" alt="" class="grid-card-img" />
-            <div class="grid-card-overlay">
-              <div>
-                <h3>French Press</h3>
-                <p>
-                  A traditional method for brewing coffee, the French press
-                  delivers a bold, full-bodied cup by steeping coarse coffee
-                  grounds in hot water before pressing them with a mesh plunger.
-                </p>
-              </div>
-              <div>
-                <a
-                  href="./brewing-details.html?id=10"
-                  class="grid-card-btn btn-secondary"
-                  >See more</a
-                >
-                <a class="grid-card-btn" onclick="addToCart(10)">
-                  <img
-                    src="../images/cart-white.svg"
-                    alt=""
-                    height="20"
-                    class="grid-cart-icon"
-                  />
-                  Add to cart</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="grid-item">
-          <div class="grid-card">
-            <img src="../images/brew-5.jpg" alt="" class="grid-card-img" />
-            <div class="grid-card-overlay">
-              <div>
-                <h3>Chemex</h3>
-                <p>
-                  Known for its sleek design, the Chemex brews clean, bright
-                  coffee using special paper filters that remove oils and
-                  sediment.
-                </p>
-              </div>
-              <div>
-                <a
-                  href="./brewing-details.html?id=11"
-                  class="grid-card-btn btn-secondary"
-                  >See more</a
-                >
-                <a class="grid-card-btn" onclick="addToCart(11)">
-                  <img
-                    src="../images/cart-white.svg"
-                    alt=""
-                    height="20"
-                    class="grid-cart-icon"
-                  />
-                  Add to cart</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="grid-item">
-          <div class="grid-card">
-            <img src="../images/brew-6.jpg" alt="" class="grid-card-img" />
-            <div class="grid-card-overlay">
-              <div>
-                <h3>Vietnamese Phin Filter</h3>
-                <p>
-                  This compact metal filter delivers robust, flavorful
-                  Vietnamese-style coffee. It sits directly on the cup, slowly
-                  dripping hot water through the grounds for a smooth, rich
-                  brew.
-                </p>
-              </div>
-              <div>
-                <a
-                  href="./brewing-details.html?id=12"
-                  class="grid-card-btn btn-secondary"
-                  >See more</a
-                >
-                <a class="grid-card-btn add-to-cart" onclick="addToCart(12)">
-                  <img
-                    src="../images/cart-white.svg"
-                    alt=""
-                    class="grid-cart-icon"
-                  />
-                  Add to cart</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
+      <div id="navbar-menu-toggle">
+        <img src="../images/menu.svg" alt="Navbar menu" width="30" height="30" class="navbar-menu-icon">
       </div>
-    </section>
-    <!-- PRODUCT SECTION END -->
+      <ul class="nav-links" id="nav-links">
+        <li>
+          <a href="./index.html" class="nav-link animated">Home</a>
+        </li>
+        <li>
+          <a href="./coffee-selection.html" class="nav-link animated">Coffee Selection</a>
+        </li>
+        <li>
+          <a href="./brewing-equipment.html" class="nav-link active">Brewing Equipment</a>
+        </li>
+        <li>
+          <a href="./events-workshops.html" class="nav-link animated">Events & Workshops</a>
+        </li>
+        <li>
+          <a href="./special-offers.html" class="nav-link animated">Special Offers</a>
+        </li>
+        <li>
+          <a href="./cart.html" class="nav-link animated">Cart</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <!-- NAVBAR END -->
 
-    <!-- TESTIMONIAL START -->
-    <section>
-      <h2 class="sub-heading">What Others Say About Our Equipment</h2>
-      <div class="testimonial-container">
-        <div class="testimonial-item">
-          <blockquote class="twitter-tweet">
-            <p lang="en" dir="ltr">
-              I hardly step out for a cup of coffee since the time I have built
-              this setup. If you really enjoy your coffee, I would highly
-              recommend getting a decent grinder, a kettle , scale and as basic
-              as a an aeropress/french press to begin your coffee journey. :)
-              <a href="https://t.co/l3Iuamd1KD">pic.twitter.com/l3Iuamd1KD</a>
-            </p>
-            &mdash; Vardhman Jain (@lightroastguy)
-            <a
-              href="https://twitter.com/lightroastguy/status/1744581156698456317?ref_src=twsrc%5Etfw"
-              >January 9, 2024</a
-            >
-          </blockquote>
-          <script
-            async
-            src="https://platform.twitter.com/widgets.js"
-            charset="utf-8"
-          ></script>
-        </div>
-        <div class="testimonial-item">
-          <blockquote class="twitter-tweet">
-            <p lang="en" dir="ltr">
-              Looking for a new solution for your craft brewery or distillery?
-              Check out the Tilt Pro to continuously monitor your specific
-              gravity and temperature. But don’t take our word for it. Here are
-              a couple of our customers.
-              <a href="https://t.co/HfCOhcugca">pic.twitter.com/HfCOhcugca</a>
-            </p>
-            &mdash; Tilt Hydrometer (@tilthydrometer)
-            <a
-              href="https://twitter.com/tilthydrometer/status/1883960270340645118?ref_src=twsrc%5Etfw"
-              >January 27, 2025</a
-            >
-          </blockquote>
-          <script
-            async
-            src="https://platform.twitter.com/widgets.js"
-            charset="utf-8"
-          ></script>
-        </div>
-        <div class="testimonial-item">
-          <blockquote class="twitter-tweet">
-            <p lang="en" dir="ltr">
-              Goodevening HOPS fam! 🍻<br /><br />Spent a good bit of the day
-              practice running the &#39;ol equipment for my upcoming BREWDAY<br /><br />Brewing
-              a Cognac aged English Barleywine - 10.5% ABV<br /><br />Going over
-              equipment with the community this afternoon in our Discord server,
-              I threw this &quot;short&quot; together…
-              <a href="https://t.co/LttXoz1FYg">pic.twitter.com/LttXoz1FYg</a>
-            </p>
-            &mdash; HOPS on Cardano (@HopsOnCardano)
-            <a
-              href="https://twitter.com/HopsOnCardano/status/1870684542459122098?ref_src=twsrc%5Etfw"
-              >December 22, 2024</a
-            >
-          </blockquote>
-          <script
-            async
-            src="https://platform.twitter.com/widgets.js"
-            charset="utf-8"
-          ></script>
-        </div>
-      </div>
-    </section>
-    <!-- TESTIMONIAL END -->
-
-    <!-- PROMOTION START -->
-    <section class="promotion-section">
-      <h2 class="sub-heading">See What Makes Our Equipment Special</h2>
+  <!-- HERO SECTION START -->
+  <header class="header">
+    <div class="overlay"></div>
+    <div class="header-content">
+      <h1>Check out our high quality brewing equipment</h1>
+      <p>
+        Discover the perfect brew at Bean Boutique. From bold blends to
+        exceptional single-origin beans, our curated selection brings you
+        flavors from renowned regions. Whether you're a seasoned barista or a
+        newcomer, our premium brewing tools help make every cup memorable.
+      </p>
       <div class="centered-content">
-        <iframe
-          src="https://www.youtube.com/embed/2TpGwBblazs?si=82MgGB8Ya2SAa2hC"
-          title="See What Makes Our Equipment Special Video"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
+        <div class="search">
+          <a href="#" class="search-icon-container">
+            <img src="../images/search.svg" alt="search icon" class="search-icon">
+          </a>
+          <input type="text" placeholder="Search..." class="search-input">
+        </div>
       </div>
-    </section>
-    <!-- PROMOTION END -->
+    </div>
+  </header>
+  <!-- HERO SECTION END -->
 
-    <!-- FOOTER START -->
-    <div class="footer-wrapper">
-      <footer>
-        <div class="footer-container">
-          <div class="footer-content">
-            <h2>Bean Boutique</h2>
-            <p>
-              Discover the perfect brew at Bean Boutique. From bold blends to
-              exceptional single-origin beans, our curated selection brings you
-              flavors from renowned regions. Whether you're a seasoned barista
-              or a newcomer, our premium brewing tools help make every cup
-              memorable.
-            </p>
-          </div>
-          <div class="quick-links">
-            <h3>Quick Links</h3>
-            <ul>
-              <li>
-                <a href="">Home</a>
-              </li>
-              <li>
-                <a href="">Coffee Selection</a>
-              </li>
-              <li>
-                <a href="">Brewing Equipment</a>
-              </li>
-              <li>
-                <a href="">Events & Workshops</a>
-              </li>
-              <li>
-                <a href="">Special Offers</a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h3>Follow us</h3>
+  <!-- PRODUCT SECTION START -->
+  <section class="products">
+    <h2 class="sub-heading">Our Brewing Equipments</h2>
+    <div class="grid">
+      <div class="grid-item">
+        <div class="grid-card">
+          <img src="../images/brew-1.jpg" alt="" class="grid-card-img">
+          <div class="grid-card-overlay">
             <div>
-              <a href="https://www.facebook.com" title="Facebook">
-                <img src="../images/fb.svg" alt="Facebook icon" height="35" />
-              </a>
-              <a href="https://www.instagram.com" title="Instagram">
-                <img
-                  src="../images/insta.svg"
-                  alt="Instagram icon"
-                  height="35"
-                />
-              </a>
-              <a href="https://www.x.com" title="X">
-                <img src="../images/x.svg" alt="X icon" height="35" />
-              </a>
+              <h3>Coffee Maker (Small)</h3>
+              <p>
+                Perfect for brewing just the right amount for 1 to 3 cups,
+                these compact machines fit neatly into small kitchens or
+                office spaces. Many come with programmable settings and auto
+                shut-off for added convenience.
+              </p>
+            </div>
+            <div>
+              <a href="./brewing-details.html?id=7" href="" class="grid-card-btn btn-secondary">See more</a>
+              <a class="grid-card-btn" onclick="addToCart(7)">
+                <img src="../images/cart-white.svg" alt="" height="20" class="grid-cart-icon">
+                Add to cart</a>
             </div>
           </div>
         </div>
-        <div class="footer-copyright">
-          <p>&copy; 2025 Bean Boutique. All rights reserved.</p>
+      </div>
+      <div class="grid-item">
+        <div class="grid-card">
+          <img src="../images/brew-2.jpg" alt="" class="grid-card-img">
+          <div class="grid-card-overlay">
+            <div>
+              <h3>Coffee Maker (Large)</h3>
+              <p>
+                Ideal for families or gatherings, large coffee makers brew
+                between 8 and 12 cups in one go. They often feature brew
+                timers, strength settings, and thermal carafes to maintain
+                heat.
+              </p>
+            </div>
+            <div>
+              <a href="./brewing-details.html?id=8" class="grid-card-btn btn-secondary">See more</a>
+              <a class="grid-card-btn" onclick="addToCart(8)">
+                <img src="../images/cart-white.svg" alt="" height="20" class="grid-cart-icon">
+                Add to cart</a>
+            </div>
+          </div>
         </div>
-      </footer>
+      </div>
+      <div class="grid-item">
+        <div class="grid-card">
+          <img src="../images/brew-3.jpg" alt="" class="grid-card-img">
+          <div class="grid-card-overlay">
+            <div>
+              <h3>Expresso Maker</h3>
+              <p>
+                Designed for those who love bold, strong shots, espresso
+                makers deliver café-quality espresso with high-pressure
+                brewing systems. Many models have steam wands for frothing
+                milk, perfect for lattes and cappuccinos.
+              </p>
+            </div>
+            <div>
+              <a href="./brewing-details.html?id=9" class="grid-card-btn btn-secondary">See more</a>
+              <a class="grid-card-btn" onclick="addToCart(9)">
+                <img src="../images/cart-white.svg" alt="" height="20" class="grid-cart-icon">
+                Add to cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="grid-card">
+          <img src="../images/brew-4.jpg" alt="" class="grid-card-img">
+          <div class="grid-card-overlay">
+            <div>
+              <h3>French Press</h3>
+              <p>
+                A traditional method for brewing coffee, the French press
+                delivers a bold, full-bodied cup by steeping coarse coffee
+                grounds in hot water before pressing them with a mesh plunger.
+              </p>
+            </div>
+            <div>
+              <a href="./brewing-details.html?id=10" class="grid-card-btn btn-secondary">See more</a>
+              <a class="grid-card-btn" onclick="addToCart(10)">
+                <img src="../images/cart-white.svg" alt="" height="20" class="grid-cart-icon">
+                Add to cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="grid-card">
+          <img src="../images/brew-5.jpg" alt="" class="grid-card-img">
+          <div class="grid-card-overlay">
+            <div>
+              <h3>Chemex</h3>
+              <p>
+                Known for its sleek design, the Chemex brews clean, bright
+                coffee using special paper filters that remove oils and
+                sediment.
+              </p>
+            </div>
+            <div>
+              <a href="./brewing-details.html?id=11" class="grid-card-btn btn-secondary">See more</a>
+              <a class="grid-card-btn" onclick="addToCart(11)">
+                <img src="../images/cart-white.svg" alt="" height="20" class="grid-cart-icon">
+                Add to cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="grid-card">
+          <img src="../images/brew-6.jpg" alt="" class="grid-card-img">
+          <div class="grid-card-overlay">
+            <div>
+              <h3>Vietnamese Phin Filter</h3>
+              <p>
+                This compact metal filter delivers robust, flavorful
+                Vietnamese-style coffee. It sits directly on the cup, slowly
+                dripping hot water through the grounds for a smooth, rich
+                brew.
+              </p>
+            </div>
+            <div>
+              <a href="./brewing-details.html?id=12" class="grid-card-btn btn-secondary">See more</a>
+              <a class="grid-card-btn add-to-cart" onclick="addToCart(12)">
+                <img src="../images/cart-white.svg" alt="" class="grid-cart-icon">
+                Add to cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- FOOTER END -->
+  </section>
+  <!-- PRODUCT SECTION END -->
 
-    <div class="toast" id="toast">
-      <p>Item added to cart</p>
+  <!-- TESTIMONIAL START -->
+  <section>
+    <h2 class="sub-heading">What Others Say About Our Equipment</h2>
+    <div class="testimonial-container">
+      <div class="testimonial-item">
+        <blockquote class="twitter-tweet">
+          <p lang="en" dir="ltr">
+            I hardly step out for a cup of coffee since the time I have built
+            this setup. If you really enjoy your coffee, I would highly
+            recommend getting a decent grinder, a kettle , scale and as basic
+            as a an aeropress/french press to begin your coffee journey. :)
+            <a href="https://t.co/l3Iuamd1KD">pic.twitter.com/l3Iuamd1KD</a>
+          </p>
+          &mdash; Vardhman Jain (@lightroastguy)
+          <a href="https://twitter.com/lightroastguy/status/1744581156698456317?ref_src=twsrc%5Etfw">January 9, 2024</a>
+        </blockquote>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+      <div class="testimonial-item">
+        <blockquote class="twitter-tweet">
+          <p lang="en" dir="ltr">
+            Looking for a new solution for your craft brewery or distillery?
+            Check out the Tilt Pro to continuously monitor your specific
+            gravity and temperature. But don’t take our word for it. Here are
+            a couple of our customers.
+            <a href="https://t.co/HfCOhcugca">pic.twitter.com/HfCOhcugca</a>
+          </p>
+          &mdash; Tilt Hydrometer (@tilthydrometer)
+          <a href="https://twitter.com/tilthydrometer/status/1883960270340645118?ref_src=twsrc%5Etfw">January 27,
+            2025</a>
+        </blockquote>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+      <div class="testimonial-item">
+        <blockquote class="twitter-tweet">
+          <p lang="en" dir="ltr">
+            Goodevening HOPS fam! 🍻<br><br>Spent a good bit of the day
+            practice running the &#39;ol equipment for my upcoming BREWDAY<br><br>Brewing
+            a Cognac aged English Barleywine - 10.5% ABV<br><br>Going over
+            equipment with the community this afternoon in our Discord server,
+            I threw this &quot;short&quot; together…
+            <a href="https://t.co/LttXoz1FYg">pic.twitter.com/LttXoz1FYg</a>
+          </p>
+          &mdash; HOPS on Cardano (@HopsOnCardano)
+          <a href="https://twitter.com/HopsOnCardano/status/1870684542459122098?ref_src=twsrc%5Etfw">December 22,
+            2024</a>
+        </blockquote>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
     </div>
+  </section>
+  <!-- TESTIMONIAL END -->
 
-    <script src="../js/script.js"></script>
-    <script src="../js/product.js"></script>
-    <script src="../js/navbar.js"></script>
-  </body>
+  <!-- PROMOTION START -->
+  <section class="promotion-section">
+    <h2 class="sub-heading">See What Makes Our Equipment Special</h2>
+    <div class="centered-content">
+      <iframe src="https://www.youtube.com/embed/2TpGwBblazs?si=82MgGB8Ya2SAa2hC"
+        title="See What Makes Our Equipment Special Video" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </section>
+  <!-- PROMOTION END -->
+
+  <!-- FOOTER START -->
+  <div class="footer-wrapper">
+    <footer>
+      <div class="footer-container">
+        <div class="footer-content">
+          <h2>Bean Boutique</h2>
+          <p>
+            Discover the perfect brew at Bean Boutique. From bold blends to
+            exceptional single-origin beans, our curated selection brings you
+            flavors from renowned regions. Whether you're a seasoned barista
+            or a newcomer, our premium brewing tools help make every cup
+            memorable.
+          </p>
+        </div>
+        <div class="quick-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li>
+              <a href="">Home</a>
+            </li>
+            <li>
+              <a href="">Coffee Selection</a>
+            </li>
+            <li>
+              <a href="">Brewing Equipment</a>
+            </li>
+            <li>
+              <a href="">Events & Workshops</a>
+            </li>
+            <li>
+              <a href="">Special Offers</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3>Follow us</h3>
+          <div>
+            <a href="https://www.facebook.com" title="Facebook">
+              <img src="../images/fb.svg" alt="Facebook icon" height="35">
+            </a>
+            <a href="https://www.instagram.com" title="Instagram">
+              <img src="../images/insta.svg" alt="Instagram icon" height="35">
+            </a>
+            <a href="https://www.x.com" title="X">
+              <img src="../images/x.svg" alt="X icon" height="35">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <p>&copy; 2025 Bean Boutique. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+  <!-- FOOTER END -->
+
+  <div class="toast" id="toast">
+    <p>Item added to cart</p>
+  </div>
+
+  <script src="../js/script.js"></script>
+  <script src="../js/product.js"></script>
+  <script src="../js/navbar.js"></script>
+</body>
+
 </html>

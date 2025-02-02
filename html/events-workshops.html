@@ -1,345 +1,292 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,400&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="../css/globals.css" />
-    <link rel="stylesheet" href="../css/layout.css" />
-    <link rel="stylesheet" href="../css/register-form.css" />
-    <link rel="stylesheet" href="../css/grid.css" />
-    <link rel="stylesheet" href="../css/slideshow.css" />
-    <link rel="stylesheet" href="../css/utility.css" />
-    <title>Document</title>
-  </head>
-  <body class="poppins-regular">
-    <!-- NAVBAR START -->
-    <div class="nav-wrapper">
-      <nav>
-        <div class="logo-container">
-          <img src="../images/logo.png" alt="" height="40px" />
-          Bean Boutique
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../css/globals.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/register-form.css">
+  <link rel="stylesheet" href="../css/grid.css">
+  <link rel="stylesheet" href="../css/slideshow.css">
+  <link rel="stylesheet" href="../css/utility.css">
+  <title>Document</title>
+</head>
+
+<body class="poppins-regular">
+  <!-- NAVBAR START -->
+  <div class="nav-wrapper">
+    <nav>
+      <div class="logo-container">
+        <img src="../images/logo.png" alt="" height="40px">
+        Bean Boutique
+      </div>
+      <div id="navbar-menu-toggle">
+        <img src="../images/menu.svg" alt="Navbar menu" width="30" height="30" class="navbar-menu-icon">
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li>
+          <a href="./index.html" class="nav-link animated">Home</a>
+        </li>
+        <li>
+          <a href="./coffee-selection.html" class="nav-link animated">Coffee Selection</a>
+        </li>
+        <li>
+          <a href="./brewing-equipment.html" class="nav-link animated">Brewing Equipment</a>
+        </li>
+        <li>
+          <a href="./events-workshops.html" class="nav-link active">Events & Workshops</a>
+        </li>
+        <li>
+          <a href="./special-offers.html" class="nav-link animated">Special Offers</a>
+        </li>
+        <li>
+          <a href="./cart.html" class="nav-link animated">Cart</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <!-- NAVBAR END -->
+
+  <!-- HERO SECTION START -->
+  <header class="header">
+    <div class="overlay"></div>
+    <div class="header-content">
+      <h1>Check out our fun events and workshops</h1>
+      <p>
+        Discover the perfect brew at Bean Boutique. From bold blends to
+        exceptional single-origin beans, our curated selection brings you
+        flavors from renowned regions. Whether you're a seasoned barista or a
+        newcomer, our premium brewing tools help make every cup memorable.
+      </p>
+      <div class="centered-content">
+        <div class="search">
+          <a href="#" class="search-icon-container">
+            <img src="../images/search.svg" alt="search icon" class="search-icon">
+          </a>
+          <input type="text" placeholder="Search..." class="search-input">
         </div>
-        <div id="navbar-menu-toggle">
-          <img
-            src="../images/menu.svg"
-            alt="Navbar menu"
-            width="30"
-            height="30"
-            class="navbar-menu-icon"
-          />
-        </div>
-        <ul class="nav-links" id="nav-links">
-          <li>
-            <a href="./index.html" class="nav-link animated">Home</a>
-          </li>
-          <li>
-            <a href="./coffee-selection.html" class="nav-link animated"
-              >Coffee Selection</a
-            >
-          </li>
-          <li>
-            <a href="./brewing-equipment.html" class="nav-link animated"
-              >Brewing Equipment</a
-            >
-          </li>
-          <li>
-            <a href="./events-workshops.html" class="nav-link active"
-              >Events & Workshops</a
-            >
-          </li>
-          <li>
-            <a href="./special-offers.html" class="nav-link animated"
-              >Special Offers</a
-            >
-          </li>
-          <li>
-            <a href="./cart.html" class="nav-link animated">Cart</a>
-          </li>
-        </ul>
-      </nav>
+      </div>
     </div>
-    <!-- NAVBAR END -->
+  </header>
+  <!-- HERO SECTION END -->
 
-    <!-- HERO SECTION START -->
-    <header class="header">
-      <div class="overlay"></div>
-      <div class="header-content">
-        <h1>Check out our fun events and workshops</h1>
-        <p>
-          Discover the perfect brew at Bean Boutique. From bold blends to
-          exceptional single-origin beans, our curated selection brings you
-          flavors from renowned regions. Whether you're a seasoned barista or a
-          newcomer, our premium brewing tools help make every cup memorable.
-        </p>
-        <div class="centered-content">
-          <div class="search">
-            <a href="#" class="search-icon-container">
-              <img
-                src="../images/search.svg"
-                alt="search icon"
-                class="search-icon"
-              />
-            </a>
-            <input type="text" placeholder="Search..." class="search-input" />
-          </div>
-        </div>
-      </div>
-    </header>
-    <!-- HERO SECTION END -->
-
-    <!-- EVENT SECTION START -->
-    <section class="products">
-      <h2 class="sub-heading">Our Products</h2>
-      <div class="grid">
-        <div class="grid-item">
-          <div class="grid-card">
-            <img
-              src="../images/event-1.jpg"
-              alt="A group of people holding coffee and hanging out and laughing"
-              class="grid-card-img"
-            />
-            <div class="grid-card-overlay">
-              <div>
-                <h3>From Green Beans to Golden Roast</h3>
-                <p>
-                  Join us for an intimate evening with our roasters. Experience
-                  the roasting process firsthand and savor fresh brews while
-                  connecting with passionate artisans.
-                </p>
-              </div>
-              <div>
-                <a href="#register" href="" class="grid-card-btn btn-primary"
-                  >Register</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="grid-item">
-          <div class="grid-card">
-            <img src="../images/event-2.jpg" alt="" class="grid-card-img" />
-            <div class="grid-card-overlay">
-              <div>
-                <h3>Around the World in Six Sips</h3>
-                <p>
-                  Join us for a guided coffee adventure featuring six distinct
-                  single-origin coffees. Discover the fruity highlights of
-                  Ethiopia and the chocolate-rich flavors of Colombia, all while
-                  honing your skills in identifying tasting notes.
-                </p>
-              </div>
-              <div>
-                <a href="#register" href="" class="grid-card-btn btn-primary"
-                  >Register</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="grid-item">
-          <div class="grid-card">
-            <img src="../images/event-3.jpg" alt="" class="grid-card-img" />
-            <div class="grid-card-overlay">
-              <div>
-                <h3>Brew Like a Barista</h3>
-                <p>
-                  Learn to make café-quality coffee at home. This hands-on
-                  workshop covers brewing techniques for pour-over, AeroPress,
-                  and French Press methods to help you unlock the true potential
-                  of your beans.
-                </p>
-              </div>
-              <div>
-                <a href="#register" href="" class="grid-card-btn btn-primary"
-                  >Register</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="grid-item">
-          <div class="grid-card">
-            <img src="../images/event-4.jpg" alt="" class="grid-card-img" />
-            <div class="grid-card-overlay">
-              <div>
-                <h3>Behind the Beans with Master Roaster</h3>
-                <p>
-                  Spend time with Alex Carter, our master roaster, as they share
-                  insights on sourcing and blending. Watch live roasting demos
-                  and enjoy exclusive tastings.
-                </p>
-              </div>
-              <div>
-                <a href="#register" href="" class="grid-card-btn btn-primary"
-                  >Register</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="grid-item">
-          <div class="grid-card">
-            <img src="../images/event-5.jpg" alt="" class="grid-card-img" />
-            <div class="grid-card-overlay">
-              <div>
-                <h3>The Art of the Palate</h3>
-                <p>
-                  Sharpen your tasting senses in this session featuring bold
-                  blends and nuanced single-origin coffees. Learn to appreciate
-                  floral aromas and nutty finishes that can elevate every cup.
-                </p>
-              </div>
-              <div>
-                <a href="#register" href="" class="grid-card-btn btn-primary"
-                  >Register</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="grid-item">
-          <div class="grid-card">
-            <img src="../images/event-6.jpg" alt="" class="grid-card-img" />
-            <div class="grid-card-overlay">
-              <div>
-                <h3>Espresso Essentials & Latte Art 101</h3>
-                <p>
-                  Level up your coffee-making skills by mastering espresso shots
-                  and latte art. No experience needed — just a passion for great
-                  coffee.
-                </p>
-              </div>
-              <div>
-                <a href="#register" href="" class="grid-card-btn btn-primary"
-                  >Register</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- PRODUCT SECTION END -->
-
-    <!-- REGISTER SECTION START -->
-    <section class="register" id="register">
-      <h2 class="sub-heading">Register For Event</h2>
-      <form action="" class="register-form">
-        <div class="form-group">
-          <label for="name">Name</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            class="form-control"
-            required
-          />
-        </div>
-        <div class="form-group">
-          <label for="name">Email</label>
-          <input
-            type="email"
-            id="name"
-            name="name"
-            class="form-control"
-            required
-          />
-        </div>
-        <div class="form-group">
-          <label for="name">Date of birth</label>
-          <input
-            type="date"
-            id="name"
-            name="name"
-            class="form-control poppins-regular"
-            required
-          />
-        </div>
-        <div class="form-group">
-          <label for="event">Event that you want to join</label>
-          <select name="event" id="event" class="poppins-regular">
-            <option value="1">From Green Beans to Golden Roast</option>
-            <option value="2">From Green Beans to Golden Roast</option>
-            <option value="3">Brew Like a Barista</option>
-            <option value="4">Behind the Beans with Master Roaster</option>
-            <option value="5">The Art of the Palate</option>
-            <option value="6">Espresso Essentials & Latte Art 101</option>
-          </select>
-        </div>
-        <div class="btn-group">
-          <buttton class="btn btn-primary">Register</buttton>
-        </div>
-      </form>
-    </section>
-    <!-- REGISTER SECTION END -->
-
-    <!-- FOOTER START -->
-    <div class="footer-wrapper">
-      <footer>
-        <div class="footer-container">
-          <div class="footer-content">
-            <h2>Bean Boutique</h2>
-            <p>
-              Discover the perfect brew at Bean Boutique. From bold blends to
-              exceptional single-origin beans, our curated selection brings you
-              flavors from renowned regions. Whether you're a seasoned barista
-              or a newcomer, our premium brewing tools help make every cup
-              memorable.
-            </p>
-          </div>
-          <div class="quick-links">
-            <h3>Quick Links</h3>
-            <ul>
-              <li>
-                <a href="">Home</a>
-              </li>
-              <li>
-                <a href="">Coffee Selection</a>
-              </li>
-              <li>
-                <a href="">Brewing Equipment</a>
-              </li>
-              <li>
-                <a href="">Events & Workshops</a>
-              </li>
-              <li>
-                <a href="">Special Offers</a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h3>Follow us</h3>
+  <!-- EVENT SECTION START -->
+  <section class="products">
+    <h2 class="sub-heading">Our Products</h2>
+    <div class="grid">
+      <div class="grid-item">
+        <div class="grid-card">
+          <img src="../images/event-1.jpg" alt="A group of people holding coffee and hanging out and laughing"
+            class="grid-card-img">
+          <div class="grid-card-overlay">
             <div>
-              <a href="https://www.facebook.com" title="Facebook">
-                <img src="../images/fb.svg" alt="Facebook icon" height="35" />
-              </a>
-              <a href="https://www.instagram.com" title="Instagram">
-                <img
-                  src="../images/insta.svg"
-                  alt="Instagram icon"
-                  height="35"
-                />
-              </a>
-              <a href="https://www.x.com" title="X">
-                <img src="../images/x.svg" alt="X icon" height="35" />
-              </a>
+              <h3>From Green Beans to Golden Roast</h3>
+              <p>
+                Join us for an intimate evening with our roasters. Experience
+                the roasting process firsthand and savor fresh brews while
+                connecting with passionate artisans.
+              </p>
+            </div>
+            <div>
+              <a href="#register" href="" class="grid-card-btn btn-primary">Register</a>
             </div>
           </div>
         </div>
-        <div class="footer-copyright">
-          <p>&copy; 2025 Bean Boutique. All rights reserved.</p>
+      </div>
+      <div class="grid-item">
+        <div class="grid-card">
+          <img src="../images/event-2.jpg" alt="" class="grid-card-img">
+          <div class="grid-card-overlay">
+            <div>
+              <h3>Around the World in Six Sips</h3>
+              <p>
+                Join us for a guided coffee adventure featuring six distinct
+                single-origin coffees. Discover the fruity highlights of
+                Ethiopia and the chocolate-rich flavors of Colombia, all while
+                honing your skills in identifying tasting notes.
+              </p>
+            </div>
+            <div>
+              <a href="#register" href="" class="grid-card-btn btn-primary">Register</a>
+            </div>
+          </div>
         </div>
-      </footer>
+      </div>
+      <div class="grid-item">
+        <div class="grid-card">
+          <img src="../images/event-3.jpg" alt="" class="grid-card-img">
+          <div class="grid-card-overlay">
+            <div>
+              <h3>Brew Like a Barista</h3>
+              <p>
+                Learn to make café-quality coffee at home. This hands-on
+                workshop covers brewing techniques for pour-over, AeroPress,
+                and French Press methods to help you unlock the true potential
+                of your beans.
+              </p>
+            </div>
+            <div>
+              <a href="#register" href="" class="grid-card-btn btn-primary">Register</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="grid-card">
+          <img src="../images/event-4.jpg" alt="" class="grid-card-img">
+          <div class="grid-card-overlay">
+            <div>
+              <h3>Behind the Beans with Master Roaster</h3>
+              <p>
+                Spend time with Alex Carter, our master roaster, as they share
+                insights on sourcing and blending. Watch live roasting demos
+                and enjoy exclusive tastings.
+              </p>
+            </div>
+            <div>
+              <a href="#register" href="" class="grid-card-btn btn-primary">Register</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="grid-card">
+          <img src="../images/event-5.jpg" alt="" class="grid-card-img">
+          <div class="grid-card-overlay">
+            <div>
+              <h3>The Art of the Palate</h3>
+              <p>
+                Sharpen your tasting senses in this session featuring bold
+                blends and nuanced single-origin coffees. Learn to appreciate
+                floral aromas and nutty finishes that can elevate every cup.
+              </p>
+            </div>
+            <div>
+              <a href="#register" href="" class="grid-card-btn btn-primary">Register</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="grid-card">
+          <img src="../images/event-6.jpg" alt="" class="grid-card-img">
+          <div class="grid-card-overlay">
+            <div>
+              <h3>Espresso Essentials & Latte Art 101</h3>
+              <p>
+                Level up your coffee-making skills by mastering espresso shots
+                and latte art. No experience needed — just a passion for great
+                coffee.
+              </p>
+            </div>
+            <div>
+              <a href="#register" href="" class="grid-card-btn btn-primary">Register</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- FOOTER END -->
+  </section>
+  <!-- PRODUCT SECTION END -->
 
-    <script src="../js/script.js"></script>
-    <script src="../js/navbar.js"></script>
-  </body>
+  <!-- REGISTER SECTION START -->
+  <section class="register" id="register">
+    <h2 class="sub-heading">Register For Event</h2>
+    <form action="" class="register-form">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="name">Email</label>
+        <input type="email" id="name" name="name" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="name">Date of birth</label>
+        <input type="date" id="name" name="name" class="form-control poppins-regular" required>
+      </div>
+      <div class="form-group">
+        <label for="event">Event that you want to join</label>
+        <select name="event" id="event" class="poppins-regular">
+          <option value="1">From Green Beans to Golden Roast</option>
+          <option value="2">From Green Beans to Golden Roast</option>
+          <option value="3">Brew Like a Barista</option>
+          <option value="4">Behind the Beans with Master Roaster</option>
+          <option value="5">The Art of the Palate</option>
+          <option value="6">Espresso Essentials & Latte Art 101</option>
+        </select>
+      </div>
+      <div class="btn-group">
+        <buttton class="btn btn-primary">Register</buttton>
+      </div>
+    </form>
+  </section>
+  <!-- REGISTER SECTION END -->
+
+  <!-- FOOTER START -->
+  <div class="footer-wrapper">
+    <footer>
+      <div class="footer-container">
+        <div class="footer-content">
+          <h2>Bean Boutique</h2>
+          <p>
+            Discover the perfect brew at Bean Boutique. From bold blends to
+            exceptional single-origin beans, our curated selection brings you
+            flavors from renowned regions. Whether you're a seasoned barista
+            or a newcomer, our premium brewing tools help make every cup
+            memorable.
+          </p>
+        </div>
+        <div class="quick-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li>
+              <a href="">Home</a>
+            </li>
+            <li>
+              <a href="">Coffee Selection</a>
+            </li>
+            <li>
+              <a href="">Brewing Equipment</a>
+            </li>
+            <li>
+              <a href="">Events & Workshops</a>
+            </li>
+            <li>
+              <a href="">Special Offers</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3>Follow us</h3>
+          <div>
+            <a href="https://www.facebook.com" title="Facebook">
+              <img src="../images/fb.svg" alt="Facebook icon" height="35">
+            </a>
+            <a href="https://www.instagram.com" title="Instagram">
+              <img src="../images/insta.svg" alt="Instagram icon" height="35">
+            </a>
+            <a href="https://www.x.com" title="X">
+              <img src="../images/x.svg" alt="X icon" height="35">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <p>&copy; 2025 Bean Boutique. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+  <!-- FOOTER END -->
+
+  <script src="../js/script.js"></script>
+  <script src="../js/navbar.js"></script>
+</body>
+
 </html>

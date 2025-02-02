@@ -1,459 +1,341 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,400&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="../css/globals.css" />
-    <link rel="stylesheet" href="../css/layout.css" />
-    <link rel="stylesheet" href="../css/product-list.css" />
-    <link rel="stylesheet" href="../css/grid.css" />
-    <link rel="stylesheet" href="../css/slideshow.css" />
-    <link rel="stylesheet" href="../css/utility.css" />
-    <link rel="stylesheet" href="../css/toast.css" />
-    <title>Document</title>
-  </head>
-  <body class="poppins-regular">
-    <!-- NAVBAR START -->
-    <div class="nav-wrapper">
-      <nav>
-        <div class="logo-container">
-          <img src="../images/logo.png" alt="" height="40px" />
-          Bean Boutique
-        </div>
-        <div id="navbar-menu-toggle">
-          <img
-            src="../images/menu.svg"
-            alt="Navbar menu"
-            width="30"
-            height="30"
-            class="navbar-menu-icon"
-          />
-        </div>
-        <ul class="nav-links" id="nav-links">
-          <li>
-            <a href="./index.html" class="nav-link animated">Home</a>
-          </li>
-          <li>
-            <a href="./coffee-selection.html" class="nav-link active"
-              >Coffee Selection</a
-            >
-          </li>
-          <li>
-            <a href="./brewing-equipment.html" class="nav-link animated"
-              >Brewing Equipment</a
-            >
-          </li>
-          <li>
-            <a href="./events-workshops.html" class="nav-link animated"
-              >Events & Workshops</a
-            >
-          </li>
-          <li>
-            <a href="./special-offers.html" class="nav-link animated"
-              >Special Offers</a
-            >
-          </li>
-          <li>
-            <a href="./cart.html" class="nav-link animated">Cart</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-    <!-- NAVBAR END -->
 
-    <!-- HERO SECTION START -->
-    <header class="header">
-      <div class="overlay"></div>
-      <div class="header-content">
-        <h1>Try our famous unique blends and single-origin coffees</h1>
-        <p>
-          Discover the perfect brew at Bean Boutique. From bold blends to
-          exceptional single-origin beans, our curated selection brings you
-          flavors from renowned regions. Whether you're a seasoned barista or a
-          newcomer, our premium brewing tools help make every cup memorable.
-        </p>
-        <div class="centered-content">
-          <div class="search">
-            <a href="#" class="search-icon-container">
-              <img
-                src="../images/search.svg"
-                alt="search icon"
-                class="search-icon"
-              />
-            </a>
-            <input type="text" placeholder="Search..." class="search-input" />
-          </div>
-        </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../css/globals.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/product-list.css">
+  <link rel="stylesheet" href="../css/grid.css">
+  <link rel="stylesheet" href="../css/slideshow.css">
+  <link rel="stylesheet" href="../css/utility.css">
+  <link rel="stylesheet" href="../css/toast.css">
+  <title>Document</title>
+</head>
+
+<body class="poppins-regular">
+  <!-- NAVBAR START -->
+  <div class="nav-wrapper">
+    <nav>
+      <div class="logo-container">
+        <img src="../images/logo.png" alt="" height="40px">
+        Bean Boutique
       </div>
-    </header>
-    <!-- HERO SECTION END -->
-
-    <!-- PRODUCT SECTION START -->
-    <section class="products">
-      <h2 class="sub-heading">Our Products</h2>
-      <div class="grid">
-        <div class="grid-item">
-          <div class="grid-card">
-            <img src="../images/coffee-1.jpg" alt="" class="grid-card-img" />
-            <div class="grid-card-overlay">
-              <div>
-                <h3>Gayo Coffee</h3>
-                <p>
-                  Grown in the lush highlands of Aceh, this premium Arabica
-                  variety is cultivated by smallholder farmers. It stands out as
-                  one of Indonesia's most cherished coffee treasures.
-                </p>
-              </div>
-              <div>
-                <a
-                  href="./coffee-details.html?id=4"
-                  href=""
-                  class="grid-card-btn btn-secondary"
-                  >See more</a
-                >
-                <a class="grid-card-btn" onclick="addToCart(4)">
-                  <img
-                    src="../images/cart-white.svg"
-                    alt=""
-                    height="20"
-                    class="grid-cart-icon"
-                  />
-                  Add to cart</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="grid-item">
-          <div class="grid-card">
-            <img
-              src="../images/coffee-bean-1.jpg"
-              alt=""
-              class="grid-card-img"
-            />
-            <div class="grid-card-overlay">
-              <div>
-                <h3>Gayo Java Blend</h3>
-                <p>
-                  This thoughtful combination of Gayo beans from Aceh and Java
-                  beans from West Java balances earthy depth with a smooth,
-                  nutty character.
-                </p>
-              </div>
-              <div>
-                <a
-                  href="./coffee-details.html?id=1"
-                  class="grid-card-btn btn-secondary"
-                  >See more</a
-                >
-                <a class="grid-card-btn" onclick="addToCart(1)">
-                  <img
-                    src="../images/cart-white.svg"
-                    alt=""
-                    height="20"
-                    class="grid-cart-icon"
-                  />
-                  Add to cart</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="grid-item">
-          <div class="grid-card">
-            <img src="../images/coffee-2.jpg" alt="" class="grid-card-img" />
-            <div class="grid-card-overlay">
-              <div>
-                <h3>Benguet Coffee</h3>
-                <p>
-                  Cultivated in the cool, fertile highlands of Benguet, this
-                  Arabica coffee thrives in volcanic soil, capturing the vibrant
-                  essence of the Cordillera region.
-                </p>
-              </div>
-              <div>
-                <a
-                  href="./coffee-details.html?id=5"
-                  class="grid-card-btn btn-secondary"
-                  >See more</a
-                >
-                <a class="grid-card-btn" onclick="addToCart(5)">
-                  <img
-                    src="../images/cart-white.svg"
-                    alt=""
-                    height="20"
-                    class="grid-cart-icon"
-                  />
-                  Add to cart</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="grid-item">
-          <div class="grid-card">
-            <img
-              src="../images/coffee-bean-2.jpg"
-              alt=""
-              class="grid-card-img"
-            />
-            <div class="grid-card-overlay">
-              <div>
-                <h3>Cordillera Sunrise</h3>
-                <p>
-                  This lively blend captures the spirit of the Philippine
-                  highlands, featuring Benguet and Sagada Arabica beans for a
-                  vibrant and balanced experience.
-                </p>
-              </div>
-              <div>
-                <a
-                  href="./coffee-details.html?id=2"
-                  class="grid-card-btn btn-secondary"
-                  >See more</a
-                >
-                <a class="grid-card-btn" onclick="addToCart(2)">
-                  <img
-                    src="../images/cart-white.svg"
-                    alt=""
-                    height="20"
-                    class="grid-cart-icon"
-                  />
-                  Add to cart</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="grid-item">
-          <div class="grid-card">
-            <img src="../images/coffee-3.jpg" alt="" class="grid-card-img" />
-            <div class="grid-card-overlay">
-              <div>
-                <h3>Da Lat Coffee</h3>
-                <p>
-                  Sourced from Da Lat, the "City of Eternal Spring," this
-                  Arabica offers a delightful balance of smooth, sweet, and
-                  spicy notes.
-                </p>
-              </div>
-              <div>
-                <a
-                  href="./coffee-details.html?id=6"
-                  class="grid-card-btn btn-secondary"
-                  >See more</a
-                >
-                <a class="grid-card-btn" onclick="addToCart(6)">
-                  <img
-                    src="../images/cart-white.svg"
-                    alt=""
-                    height="20"
-                    class="grid-cart-icon"
-                  />
-                  Add to cart</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="grid-item">
-          <div class="grid-card">
-            <img
-              src="../images/coffee-bean-3.jpg"
-              alt=""
-              class="grid-card-img"
-            />
-            <div class="grid-card-overlay">
-              <div>
-                <h3>Mekong Midnight</h3>
-                <p>
-                  A bold and complex blend featuring Vietnam's robusta, Laos'
-                  arabica, and Cambodia's liberica beans, offering a powerful
-                  cup with intriguing regional nuances.
-                </p>
-              </div>
-              <div>
-                <a
-                  href="./coffee-details.html?id=3"
-                  class="grid-card-btn btn-secondary"
-                  >See more</a
-                >
-                <a class="grid-card-btn add-to-cart" onclick="addToCart(3)">
-                  <img
-                    src="../images/cart-white.svg"
-                    alt=""
-                    class="grid-cart-icon"
-                  />
-                  Add to cart</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
+      <div id="navbar-menu-toggle">
+        <img src="../images/menu.svg" alt="Navbar menu" width="30" height="30" class="navbar-menu-icon">
       </div>
-    </section>
-    <!-- PRODUCT SECTION END -->
+      <ul class="nav-links" id="nav-links">
+        <li>
+          <a href="./index.html" class="nav-link animated">Home</a>
+        </li>
+        <li>
+          <a href="./coffee-selection.html" class="nav-link active">Coffee Selection</a>
+        </li>
+        <li>
+          <a href="./brewing-equipment.html" class="nav-link animated">Brewing Equipment</a>
+        </li>
+        <li>
+          <a href="./events-workshops.html" class="nav-link animated">Events & Workshops</a>
+        </li>
+        <li>
+          <a href="./special-offers.html" class="nav-link animated">Special Offers</a>
+        </li>
+        <li>
+          <a href="./cart.html" class="nav-link animated">Cart</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <!-- NAVBAR END -->
 
-    <!-- TESTIMONIAL START -->
-    <section>
-      <h2 class="sub-heading">What Others Say About Our Coffee</h2>
-      <div class="testimonial-container">
-        <div class="testimonial-item">
-          <blockquote class="twitter-tweet">
-            <p lang="en" dir="ltr">
-              SNICKERDOODLE PROTEIN IS HERE!!!! <br />Introducing your next
-              coffee obsession...our signature protein coffee with notes of
-              decadent cinnamon-y cookie dough. Use code BF20 to save 20% and
-              use code CAP to get a FREE Javvy cap on all orders $50+ --
-              <a href="https://t.co/lcSiXA6QQ0">https://t.co/lcSiXA6QQ0</a>
-              <a href="https://t.co/LbRMWVMrzi">pic.twitter.com/LbRMWVMrzi</a>
-            </p>
-            &mdash; Javvy Coffee (@javvycoffee)
-            <a
-              href="https://twitter.com/javvycoffee/status/1862624399108558976?ref_src=twsrc%5Etfw"
-              >November 29, 2024</a
-            >
-          </blockquote>
-          <script
-            async
-            src="https://platform.twitter.com/widgets.js"
-            charset="utf-8"
-          ></script>
-        </div>
-        <div class="testimonial-item">
-          <blockquote class="twitter-tweet">
-            <p lang="en" dir="ltr">
-              Blessing your timeline with this sweet review from our amazing
-              client &amp; you already know, reviews don’t lie!🤌🏽<br /><br />Our
-              hand poured soy scented candles are perfect for both adding
-              ambiance to your home &amp; a pleasure to smell.<br /><br />Coffee
-              fragrance still available in 100g<br />Price: N10,000
-              <a href="https://t.co/zH3l5n6QET">pic.twitter.com/zH3l5n6QET</a>
-            </p>
-            &mdash; Eyesberg Perfume Shop PBD/0049 (@EPerfumeShop)
-            <a
-              href="https://twitter.com/EPerfumeShop/status/1885754143807017300?ref_src=twsrc%5Etfw"
-              >February 1, 2025</a
-            >
-          </blockquote>
-          <script
-            async
-            src="https://platform.twitter.com/widgets.js"
-            charset="utf-8"
-          ></script>
-        </div>
-        <div class="testimonial-item">
-          <blockquote class="twitter-tweet">
-            <p lang="en" dir="ltr">
-              Two newish coffee spots with great reviews in Tampa &gt;&gt;
-              <a href="https://t.co/KaSH0GLwKK">https://t.co/KaSH0GLwKK</a>
-              <a href="https://t.co/Hu61hR8jUC">pic.twitter.com/Hu61hR8jUC</a>
-            </p>
-            &mdash; That&#39;s So Tampa (@ThatsSoTampa)
-            <a
-              href="https://twitter.com/ThatsSoTampa/status/1883936955479535817?ref_src=twsrc%5Etfw"
-              >January 27, 2025</a
-            >
-          </blockquote>
-          <script
-            async
-            src="https://platform.twitter.com/widgets.js"
-            charset="utf-8"
-          ></script>
-        </div>
-      </div>
-    </section>
-    <!-- TESTIMONIAL END -->
-
-    <!-- PROMOTION START -->
-    <section class="promotion-section">
-      <h2 class="sub-heading">See What Makes Our Coffee Special</h2>
+  <!-- HERO SECTION START -->
+  <header class="header">
+    <div class="overlay"></div>
+    <div class="header-content">
+      <h1>Try our famous unique blends and single-origin coffees</h1>
+      <p>
+        Discover the perfect brew at Bean Boutique. From bold blends to
+        exceptional single-origin beans, our curated selection brings you
+        flavors from renowned regions. Whether you're a seasoned barista or a
+        newcomer, our premium brewing tools help make every cup memorable.
+      </p>
       <div class="centered-content">
-        <iframe
-          src="https://www.youtube.com/embed/JeXsKCySpGI?si=Xag4IBUti7isX03W"
-          class=""
-          title="See What Makes Our Coffee Special Video"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
+        <div class="search">
+          <a href="#" class="search-icon-container">
+            <img src="../images/search.svg" alt="search icon" class="search-icon">
+          </a>
+          <input type="text" placeholder="Search..." class="search-input">
+        </div>
       </div>
-    </section>
-    <!-- PROMOTION END -->
+    </div>
+  </header>
+  <!-- HERO SECTION END -->
 
-    <!-- FOOTER START -->
-    <div class="footer-wrapper">
-      <footer>
-        <div class="footer-container">
-          <div class="footer-content">
-            <h2>Bean Boutique</h2>
-            <p>
-              Discover the perfect brew at Bean Boutique. From bold blends to
-              exceptional single-origin beans, our curated selection brings you
-              flavors from renowned regions. Whether you're a seasoned barista
-              or a newcomer, our premium brewing tools help make every cup
-              memorable.
-            </p>
-          </div>
-          <div class="quick-links">
-            <h3>Quick Links</h3>
-            <ul>
-              <li>
-                <a href="">Home</a>
-              </li>
-              <li>
-                <a href="">Coffee Selection</a>
-              </li>
-              <li>
-                <a href="">Brewing Equipment</a>
-              </li>
-              <li>
-                <a href="">Events & Workshops</a>
-              </li>
-              <li>
-                <a href="">Special Offers</a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h3>Follow us</h3>
+  <!-- PRODUCT SECTION START -->
+  <section class="products">
+    <h2 class="sub-heading">Our Products</h2>
+    <div class="grid">
+      <div class="grid-item">
+        <div class="grid-card">
+          <img src="../images/coffee-1.jpg" alt="" class="grid-card-img">
+          <div class="grid-card-overlay">
             <div>
-              <a href="https://www.facebook.com" title="Facebook">
-                <img src="../images/fb.svg" alt="Facebook icon" height="35" />
-              </a>
-              <a href="https://www.instagram.com" title="Instagram">
-                <img
-                  src="../images/insta.svg"
-                  alt="Instagram icon"
-                  height="35"
-                />
-              </a>
-              <a href="https://www.x.com" title="X">
-                <img src="../images/x.svg" alt="X icon" height="35" />
-              </a>
+              <h3>Gayo Coffee</h3>
+              <p>
+                Grown in the lush highlands of Aceh, this premium Arabica
+                variety is cultivated by smallholder farmers. It stands out as
+                one of Indonesia's most cherished coffee treasures.
+              </p>
+            </div>
+            <div>
+              <a href="./coffee-details.html?id=4" href="" class="grid-card-btn btn-secondary">See more</a>
+              <a class="grid-card-btn" onclick="addToCart(4)">
+                <img src="../images/cart-white.svg" alt="" height="20" class="grid-cart-icon">
+                Add to cart</a>
             </div>
           </div>
         </div>
-        <div class="footer-copyright">
-          <p>&copy; 2025 Bean Boutique. All rights reserved.</p>
+      </div>
+      <div class="grid-item">
+        <div class="grid-card">
+          <img src="../images/coffee-bean-1.jpg" alt="" class="grid-card-img">
+          <div class="grid-card-overlay">
+            <div>
+              <h3>Gayo Java Blend</h3>
+              <p>
+                This thoughtful combination of Gayo beans from Aceh and Java
+                beans from West Java balances earthy depth with a smooth,
+                nutty character.
+              </p>
+            </div>
+            <div>
+              <a href="./coffee-details.html?id=1" class="grid-card-btn btn-secondary">See more</a>
+              <a class="grid-card-btn" onclick="addToCart(1)">
+                <img src="../images/cart-white.svg" alt="" height="20" class="grid-cart-icon">
+                Add to cart</a>
+            </div>
+          </div>
         </div>
-      </footer>
+      </div>
+      <div class="grid-item">
+        <div class="grid-card">
+          <img src="../images/coffee-2.jpg" alt="" class="grid-card-img">
+          <div class="grid-card-overlay">
+            <div>
+              <h3>Benguet Coffee</h3>
+              <p>
+                Cultivated in the cool, fertile highlands of Benguet, this
+                Arabica coffee thrives in volcanic soil, capturing the vibrant
+                essence of the Cordillera region.
+              </p>
+            </div>
+            <div>
+              <a href="./coffee-details.html?id=5" class="grid-card-btn btn-secondary">See more</a>
+              <a class="grid-card-btn" onclick="addToCart(5)">
+                <img src="../images/cart-white.svg" alt="" height="20" class="grid-cart-icon">
+                Add to cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="grid-card">
+          <img src="../images/coffee-bean-2.jpg" alt="" class="grid-card-img">
+          <div class="grid-card-overlay">
+            <div>
+              <h3>Cordillera Sunrise</h3>
+              <p>
+                This lively blend captures the spirit of the Philippine
+                highlands, featuring Benguet and Sagada Arabica beans for a
+                vibrant and balanced experience.
+              </p>
+            </div>
+            <div>
+              <a href="./coffee-details.html?id=2" class="grid-card-btn btn-secondary">See more</a>
+              <a class="grid-card-btn" onclick="addToCart(2)">
+                <img src="../images/cart-white.svg" alt="" height="20" class="grid-cart-icon">
+                Add to cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="grid-card">
+          <img src="../images/coffee-3.jpg" alt="" class="grid-card-img">
+          <div class="grid-card-overlay">
+            <div>
+              <h3>Da Lat Coffee</h3>
+              <p>
+                Sourced from Da Lat, the "City of Eternal Spring," this
+                Arabica offers a delightful balance of smooth, sweet, and
+                spicy notes.
+              </p>
+            </div>
+            <div>
+              <a href="./coffee-details.html?id=6" class="grid-card-btn btn-secondary">See more</a>
+              <a class="grid-card-btn" onclick="addToCart(6)">
+                <img src="../images/cart-white.svg" alt="" height="20" class="grid-cart-icon">
+                Add to cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="grid-card">
+          <img src="../images/coffee-bean-3.jpg" alt="" class="grid-card-img">
+          <div class="grid-card-overlay">
+            <div>
+              <h3>Mekong Midnight</h3>
+              <p>
+                A bold and complex blend featuring Vietnam's robusta, Laos'
+                arabica, and Cambodia's liberica beans, offering a powerful
+                cup with intriguing regional nuances.
+              </p>
+            </div>
+            <div>
+              <a href="./coffee-details.html?id=3" class="grid-card-btn btn-secondary">See more</a>
+              <a class="grid-card-btn add-to-cart" onclick="addToCart(3)">
+                <img src="../images/cart-white.svg" alt="" class="grid-cart-icon">
+                Add to cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- FOOTER END -->
+  </section>
+  <!-- PRODUCT SECTION END -->
 
-    <div class="toast" id="toast">
-      <p>Item added to cart</p>
+  <!-- TESTIMONIAL START -->
+  <section>
+    <h2 class="sub-heading">What Others Say About Our Coffee</h2>
+    <div class="testimonial-container">
+      <div class="testimonial-item">
+        <blockquote class="twitter-tweet">
+          <p lang="en" dir="ltr">
+            SNICKERDOODLE PROTEIN IS HERE!!!! <br>Introducing your next
+            coffee obsession...our signature protein coffee with notes of
+            decadent cinnamon-y cookie dough. Use code BF20 to save 20% and
+            use code CAP to get a FREE Javvy cap on all orders $50+ --
+            <a href="https://t.co/lcSiXA6QQ0">https://t.co/lcSiXA6QQ0</a>
+            <a href="https://t.co/LbRMWVMrzi">pic.twitter.com/LbRMWVMrzi</a>
+          </p>
+          &mdash; Javvy Coffee (@javvycoffee)
+          <a href="https://twitter.com/javvycoffee/status/1862624399108558976?ref_src=twsrc%5Etfw">November 29, 2024</a>
+        </blockquote>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+      <div class="testimonial-item">
+        <blockquote class="twitter-tweet">
+          <p lang="en" dir="ltr">
+            Blessing your timeline with this sweet review from our amazing
+            client &amp; you already know, reviews don’t lie!🤌🏽<br><br>Our
+            hand poured soy scented candles are perfect for both adding
+            ambiance to your home &amp; a pleasure to smell.<br><br>Coffee
+            fragrance still available in 100g<br>Price: N10,000
+            <a href="https://t.co/zH3l5n6QET">pic.twitter.com/zH3l5n6QET</a>
+          </p>
+          &mdash; Eyesberg Perfume Shop PBD/0049 (@EPerfumeShop)
+          <a href="https://twitter.com/EPerfumeShop/status/1885754143807017300?ref_src=twsrc%5Etfw">February 1, 2025</a>
+        </blockquote>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+      <div class="testimonial-item">
+        <blockquote class="twitter-tweet">
+          <p lang="en" dir="ltr">
+            Two newish coffee spots with great reviews in Tampa &gt;&gt;
+            <a href="https://t.co/KaSH0GLwKK">https://t.co/KaSH0GLwKK</a>
+            <a href="https://t.co/Hu61hR8jUC">pic.twitter.com/Hu61hR8jUC</a>
+          </p>
+          &mdash; That&#39;s So Tampa (@ThatsSoTampa)
+          <a href="https://twitter.com/ThatsSoTampa/status/1883936955479535817?ref_src=twsrc%5Etfw">January 27, 2025</a>
+        </blockquote>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
     </div>
+  </section>
+  <!-- TESTIMONIAL END -->
 
-    <script src="../js/script.js"></script>
-    <script src="../js/product.js"></script>
-    <script src="../js/navbar.js"></script>
-  </body>
+  <!-- PROMOTION START -->
+  <section class="promotion-section">
+    <h2 class="sub-heading">See What Makes Our Coffee Special</h2>
+    <div class="centered-content">
+      <iframe src="https://www.youtube.com/embed/JeXsKCySpGI?si=Xag4IBUti7isX03W" class=""
+        title="See What Makes Our Coffee Special Video" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </section>
+  <!-- PROMOTION END -->
+
+  <!-- FOOTER START -->
+  <div class="footer-wrapper">
+    <footer>
+      <div class="footer-container">
+        <div class="footer-content">
+          <h2>Bean Boutique</h2>
+          <p>
+            Discover the perfect brew at Bean Boutique. From bold blends to
+            exceptional single-origin beans, our curated selection brings you
+            flavors from renowned regions. Whether you're a seasoned barista
+            or a newcomer, our premium brewing tools help make every cup
+            memorable.
+          </p>
+        </div>
+        <div class="quick-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li>
+              <a href="">Home</a>
+            </li>
+            <li>
+              <a href="">Coffee Selection</a>
+            </li>
+            <li>
+              <a href="">Brewing Equipment</a>
+            </li>
+            <li>
+              <a href="">Events & Workshops</a>
+            </li>
+            <li>
+              <a href="">Special Offers</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3>Follow us</h3>
+          <div>
+            <a href="https://www.facebook.com" title="Facebook">
+              <img src="../images/fb.svg" alt="Facebook icon" height="35">
+            </a>
+            <a href="https://www.instagram.com" title="Instagram">
+              <img src="../images/insta.svg" alt="Instagram icon" height="35">
+            </a>
+            <a href="https://www.x.com" title="X">
+              <img src="../images/x.svg" alt="X icon" height="35">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <p>&copy; 2025 Bean Boutique. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+  <!-- FOOTER END -->
+
+  <div class="toast" id="toast">
+    <p>Item added to cart</p>
+  </div>
+
+  <script src="../js/script.js"></script>
+  <script src="../js/product.js"></script>
+  <script src="../js/navbar.js"></script>
+</body>
+
 </html>
