@@ -2,7 +2,7 @@ const cart = localStorage.getItem("__cart__");
 let cartData;
 const cartResultEl = document.getElementById("cart-body");
 
-if (!cart && Object.entries(JSON.parse(cart)).length === 0) {
+if (!cart) {
   renderEmptyList();
 } else {
   cartData = JSON.parse(cart);

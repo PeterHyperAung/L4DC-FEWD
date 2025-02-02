@@ -155,17 +155,93 @@ const BREW_PRODUCTS = [
     price: 1000,
     priceSuffix: "USD",
     img: "brew-1.jpg",
-    description: `Sourced from Da Lat, the "City of Eternal Spring," this Arabica offers a delightful balance of smooth, sweet, and spicy notes.`,
+    description: `Perfect for brewing just the right amount for 1 to 3 cups, these compact machines fit neatly into small kitchens or office spaces. Many come with programmable settings and auto shut-off for added convenience.`,
+    usageTips: [
+      "Use freshly ground coffee for the best flavor.",
+      "Measure 1 to 2 tablespoons of coffee per 6 oz cup.",
+      "Clean the filter and water reservoir regularly to avoid build-up.",
+      "Preheat your mug to keep your coffee hotter for longer.",
+    ],
+  },
+  {
+    id: 8,
+    name: "Coffee Maker (Large)",
+    price: 1500,
+    priceSuffix: "USD",
+    img: "brew-2.jpg",
+    description: `Ideal for families or gatherings, large coffee makers brew between 8 and 12 cups in one go. They often feature brew timers, strength settings, and thermal carafes to maintain heat.`,
+    usageTips: [
+      "Use coarser coffee grounds to avoid filter clogging.",
+      "Filtered water enhances the coffee’s flavor.",
+      "Keep the warming plate clean to prevent burnt flavors.",
+      "Descale every 2 to 3 months for peak performance.",
+    ],
+  },
+  {
+    id: 9,
+    name: "Expresso Maker",
+    price: 1500,
+    priceSuffix: "USD",
+    img: "brew-3.jpg",
+    description: `Designed for those who love bold, strong shots, espresso makers deliver café-quality espresso with high-pressure brewing systems. Many models have steam wands for frothing milk, perfect for lattes and cappuccinos.`,
+    usageTips: [
+      "Use finely ground coffee for a rich, intense shot.",
+      "Tamp the grounds evenly without pressing too hard.",
+      "Brew for 25 to 30 seconds for the best shot.",
+      "Always clean the steam wand to prevent milk residue.",
+    ],
+  },
+  {
+    id: 10,
+    name: "French Press",
+    price: 1000,
+    priceSuffix: "USD",
+    img: "brew-1.jpg",
+    description: `A traditional method for brewing coffee, the French press delivers a bold, full-bodied cup by steeping coarse coffee grounds in hot water before pressing them with a mesh plunger.`,
+    usageTips: [
+      "Use coarse ground coffee to avoid sediment in your cup.",
+      "Steep the coffee for 4 minutes for balanced flavor.",
+      "Stir gently after adding hot water for even extraction.",
+      "Rinse the filter thoroughly after each use.",
+    ],
+  },
+  {
+    id: 11,
+    name: "Chemex",
+    price: 1000,
+    priceSuffix: "USD",
+    img: "brew-1.jpg",
+    description: `Known for its sleek design, the Chemex brews clean, bright coffee using special paper filters that remove oils and sediment.`,
+    usageTips: [
+      "Use medium-coarse grounds for a well-balanced cup.",
+      "Wet the filter first to remove any papery taste.",
+      "Pour water slowly in circular motions for even extraction.",
+      "Rinse and dry carefully to maintain its glass structure.",
+    ],
+  },
+  {
+    id: 12,
+    name: "Vietnamese Phin Filter",
+    price: 1000,
+    priceSuffix: "USD",
+    img: "brew-1.jpg",
+    description: `This compact metal filter delivers robust, flavorful Vietnamese-style coffee. It sits directly on the cup, slowly dripping hot water through the grounds for a smooth, rich brew.`,
+    usageTips: [
+      "Use medium-coarse coffee grounds for the best flavor.",
+      "Add condensed milk for authentic Vietnamese iced coffee (cà phê sữa đá).",
+      "Allow the water to drip slowly for about 5 minutes.",
+      "Clean the filter thoroughly to prevent blockages.",
+    ],
   },
 ];
 
 const BOTH_PRODUCTS = [...COFFEE_PRODUCTS, ...BREW_PRODUCTS];
 
 function addToCart(id) {
-  const cart = localStorage.getItem("cart");
+  const cart = localStorage.getItem("__cart__");
   const cartItems = cart ? JSON.parse(cart) : {};
   cartItems[id] = cartItems[id] ? cartItems[id] + 1 : 1;
-  localStorage.setItem("cart", JSON.stringify(cartItems));
+  localStorage.setItem("__cart__", JSON.stringify(cartItems));
   const toastEl = document.getElementById("toast");
   toastEl.classList.add("active");
   setTimeout(() => {
