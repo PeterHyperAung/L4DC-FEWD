@@ -8,6 +8,7 @@ html {
   font-size: 62.5%;
   overflow-x: hidden;
   width: 100vw;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -21,6 +22,11 @@ body {
   --secondary-color: #d2665a;
   --tertitary-color: #f2b28c;
   --white-color: #f6ded8;
+}
+
+section {
+  max-width: 1980px;
+  margin: 0 auto;
 }
 
 section {

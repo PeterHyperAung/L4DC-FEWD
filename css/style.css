@@ -1,90 +1,3 @@
-header {
-  background-image: url("../images/hero-image.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 100vh;
-  color: white;
-}
-
-header .overlay {
-  background-color: rgba(0, 0, 0, 0.6);
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  position: relative;
-  overflow: hidden;
-}
-
-header .header-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  max-width: 1280px;
-}
-
-.header .search-icon-container {
-  position: absolute;
-  right: 1.5rem;
-  top: 50%;
-  transform: translateY(-40%);
-  cursor: text;
-}
-
-header .search-icon {
-  width: 2rem;
-  height: 2rem;
-}
-
-header .search {
-  position: relative;
-  box-shadow: 0px 32px 40px -19px rgba(0, 0, 0, 0.25);
-}
-
-header .search-input {
-  outline: none;
-  border: none;
-  border-radius: 30px;
-  padding: 1.4rem 2.4rem;
-  width: 0;
-  transition: width 0.5s;
-  font-size: 1.4rem;
-  max-width: 90vw;
-}
-
-.header .search-icon-container:focus + input {
-  width: 50rem;
-}
-
-header .search-input:focus {
-  width: 50rem;
-}
-
-header .header-content {
-  text-align: center;
-}
-
-header .header-content h1 {
-  font-size: 4.8rem;
-  max-width: 780px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-header .header-content p {
-  font-size: 1.6rem;
-  max-width: 800px;
-  margin-bottom: 24px;
-}
-
-section {
-  margin: 80px 0;
-}
-
 .about .about-container {
   display: flex;
   justify-content: center;
@@ -113,30 +26,35 @@ section {
   border-radius: 10px;
 }
 
-@media screen and (max-width: 1280px) {
-  .header-content p {
-    font-size: 2rem;
-  }
+/* CONTACT SECTION START */
 
+.contact .contact-message h3 {
+  font-size: 2.4rem;
+}
+
+.contact .contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.contact-map {
+  border: 0;
+  width: 60rem;
+  height: 45rem;
+}
+
+/* CONTACT SECTION END */
+
+@media screen and (max-width: 1280px) {
   .about .about-container {
     gap: 30px;
     padding: 0 20px;
   }
 }
 
-@media screen and (max-width: 1000px) {
-  .header-content {
-    width: 600px;
-    padding: 0 20px;
-  }
-}
-
 @media screen and (max-width: 680px) {
-  .header-content {
-    width: 100%;
-    padding: 0 15px;
-  }
-
   .about .about-container {
     flex-direction: column;
     gap: 10px;
