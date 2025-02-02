@@ -46,7 +46,7 @@
 .slideshow,
 .slideshow * {
   scrollbar-color: transparent transparent; /* thumb and track color */
-  scrollbar-width: 0px;
+  scrollbar-width: none;
 }
 
 .slideshow::-webkit-scrollbar,
