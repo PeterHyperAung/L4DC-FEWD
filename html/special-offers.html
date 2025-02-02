@@ -11,9 +11,9 @@
     />
     <link rel="stylesheet" href="../css/globals.css" />
     <link rel="stylesheet" href="../css/layout.css" />
-    <link rel="stylesheet" href="../css/grid.css" />
     <link rel="stylesheet" href="../css/subscription.css" />
     <link rel="stylesheet" href="../css/utility.css" />
+    <link rel="stylesheet" href="../css/register-form.css" />
     <title>Document</title>
   </head>
   <body class="poppins-regular">
@@ -98,20 +98,19 @@
         <h2 class="sub-heading">SPECIAL OFFERS</h2>
         <div class="special-container">
           <div class="special-content">
-            <h2>Newcomers special offer</h2>
+            <h2>Newcomers Special Offer</h2>
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.
+              Calling all coffee lovers! Join us for the perfect introduction to
+              our coffee haven with our Newcomer's Special Offer. Whether you
+              love the bold kick of espresso, the smooth charm of a pour-over,
+              or the cozy warmth of a French Press brew, we've got a delightful
+              cup waiting for you. Enjoy a complimentary pastry with your first
+              coffee purchase or receive 15% off your entire order. Join by
+              registering first.
             </p>
-            <button class="btn btn-primary">Register for offer</button>
+            <a href="#register" class="btn btn-primary inline-block"
+              >Register for offer</a
+            >
           </div>
           <div class="special-img-container">
             <img src="../images/special-1.jpg" alt="" class="special-img" />
@@ -122,25 +121,230 @@
             <img src="../images/special-2.jpg" alt="" class="special-img" />
           </div>
           <div class="special-content">
-            <h2>Valentine day offer</h2>
+            <h2>Valentine Day Offer</h2>
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.
+              This Valentine's Day, celebrate love with a heartwarming cup of
+              coffee! Whether you're spending it with your significant other,
+              your best friend, or treating yourself, our Valentine Day Special
+              Offer is sure to make your day special.
             </p>
-            <button class="btn btn-primary">Register for offer</button>
+            <a href="#register" class="btn btn-primary inline-block"
+              >Register for offer</a
+            >
           </div>
         </div>
       </div>
     </section>
     <!-- SPECIAL OFFERS END -->
+
+    <!-- REGISTER SECTION START -->
+    <section class="register" id="register">
+      <h2 class="sub-heading">Register For Special Offers</h2>
+      <form action="" class="register-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            class="form-control"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="name">Email</label>
+          <input
+            type="email"
+            id="name"
+            name="name"
+            class="form-control"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="name">Date of birth</label>
+          <input
+            type="date"
+            id="name"
+            name="name"
+            class="form-control poppins-regular"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="event">Event that you want to join</label>
+          <select name="event" id="event" class="poppins-regular">
+            <option value="1">Newcomers Special Offer</option>
+            <option value="2">Valentine Day Offer</option>
+          </select>
+        </div>
+        <div class="btn-group">
+          <buttton class="btn btn-primary">Register</buttton>
+        </div>
+      </form>
+    </section>
+    <!-- REGISTER SECTION END -->
+
+    <!-- SUBSCRIPTION MODEL START -->
+    <section id="subscription">
+      <h2 class="sub-heading">Subscription Plans</h2>
+      <div class="subscription-container">
+        <div class="subscription-item">
+          <div class="card">
+            <div class="card-header">
+              <h4>$150</h4>
+              <p class="poppins-light">per month</p>
+            </div>
+            <div class="card-body">
+              <ul class="card-list">
+                <li>
+                  <img
+                    src="../images/tick.svg"
+                    alt=""
+                    class="card-list-icon"
+                    alt="correct tick icon"
+                  />
+                  300g of coffee blend
+                </li>
+                <li>
+                  <img
+                    src="../images/tick.svg"
+                    class="card-list-icon"
+                    alt="correct tick icon"
+                  />
+                  10 cups of coffee
+                </li>
+                <li>
+                  <img
+                    src="../images/tick.svg"
+                    class="card-list-icon"
+                    alt="correct tick icon"
+                  />
+                  Free delivery
+                </li>
+                <li>
+                  <img
+                    src="../images/cross.svg"
+                    class="card-list-icon"
+                    alt="Wrong cross icon"
+                  />
+                  Customize your coffee
+                </li>
+              </ul>
+              <div class="centered-content">
+                <button class="btn btn-primary inline-block btn-sub">
+                  Subscribe
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="subscription-item">
+          <div class="card">
+            <div class="card-header">
+              <h4>$300</h4>
+              <p class="poppins-light">per month</p>
+            </div>
+            <div class="card-body">
+              <ul class="card-list">
+                <li>
+                  <img
+                    src="../images/tick.svg"
+                    alt=""
+                    class="card-list-icon"
+                    alt="correct tick icon"
+                  />
+                  600g of coffee blend
+                </li>
+                <li>
+                  <img
+                    src="../images/tick.svg"
+                    class="card-list-icon"
+                    alt="correct tick icon"
+                  />
+                  20 cups of coffee
+                </li>
+                <li>
+                  <img
+                    src="../images/tick.svg"
+                    class="card-list-icon"
+                    alt="correct tick icon"
+                  />
+                  Free delivery
+                </li>
+                <li>
+                  <img
+                    src="../images/tick.svg"
+                    class="card-list-icon"
+                    alt="Wrong cross icon"
+                  />
+                  Customize your coffee
+                </li>
+              </ul>
+              <div class="centered-content">
+                <button class="btn btn-primary inline-block btn-sub">
+                  Subscribe
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="subscription-item">
+          <div class="card">
+            <div class="card-header">
+              <h4>$450</h4>
+              <p class="poppins-light">per month</p>
+            </div>
+            <div class="card-body">
+              <ul class="card-list">
+                <li>
+                  <img
+                    src="../images/tick.svg"
+                    alt=""
+                    class="card-list-icon"
+                    alt="correct tick icon"
+                  />
+                  900g of coffee blend
+                </li>
+                <li>
+                  <img
+                    src="../images/tick.svg"
+                    class="card-list-icon"
+                    alt="correct tick icon"
+                  />
+                  30 cups of coffee
+                </li>
+                <li>
+                  <img
+                    src="../images/tick.svg"
+                    class="card-list-icon"
+                    alt="correct tick icon"
+                  />
+                  Free delivery
+                </li>
+                <li>
+                  <img
+                    src="../images/tick.svg"
+                    class="card-list-icon"
+                    alt="Wrong cross icon"
+                  />
+                  Customize your coffee
+                </li>
+              </ul>
+              <div class="centered-content">
+                <button class="btn btn-primary inline-block btn-sub">
+                  Subscribe
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SUBSCRIPTION MODEL END -->
 
     <!-- FOOTER START -->
     <div class="footer-wrapper">
