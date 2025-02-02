@@ -29,7 +29,45 @@
 /* CONTACT SECTION START */
 
 .contact .contact-message h3 {
-  font-size: 2.4rem;
+  font-size: 3rem;
+}
+
+.contact .contact-message label {
+  font-size: 1.6rem;
+  margin-bottom: 5px;
+  margin-top: 15px;
+  display: block;
+}
+
+.contact .contact-message input {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+.contact .contact-message input:focus {
+  outline: none;
+  border: 1px solid var(--primary-color);
+}
+
+.contact .contact-message textarea {
+  width: 300px;
+  height: 150px;
+  resize: none;
+  padding: 10px;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+.contact .contact-message textarea:focus {
+  outline: none;
+  border: 1px solid var(--primary-color);
+}
+
+.contact .btn-contact-message {
+  margin-top: 10px;
+  margin-left: 0;
 }
 
 .contact .contact-container {
@@ -43,6 +81,7 @@
   border: 0;
   width: 60rem;
   height: 45rem;
+  max-width: 95vw;
 }
 
 /* CONTACT SECTION END */
@@ -51,6 +90,16 @@
   .about .about-container {
     gap: 30px;
     padding: 0 20px;
+  }
+
+  .contact .contact-container {
+    gap: 50px;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .contact .contact-container {
+    flex-direction: column;
   }
 }
 

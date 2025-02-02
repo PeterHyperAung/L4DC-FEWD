@@ -66,6 +66,20 @@
   background-color: var(--primary-color);
   font-size: 1.6rem;
   border-radius: 10px;
+  margin-bottom: 10px;
+  transition: opacity 0.3s;
+  color: white;
+}
+
+.grid-card-overlay .grid-card-btn:hover {
+  opacity: 0.85;
+}
+
+.grid-cart-icon {
+  transform: translateY(2px);
+  display: inline-block;
+  margin-right: 3px;
+  height: 2rem;
 }
 
 @media screen and (max-width: 1300px) {

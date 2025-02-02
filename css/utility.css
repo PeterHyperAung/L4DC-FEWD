@@ -2,6 +2,7 @@
   text-align: center;
   font-size: 3.6rem;
   margin-bottom: 5rem;
+  color: var(--secondary-color);
 }
 
 .centered-content {
@@ -12,13 +13,12 @@
 
 .btn {
   color: white;
-  padding: 15px 25px;
+  padding: 1.5rem 2.5rem;
   border: none;
   border-radius: 5px;
   font-size: 1.6rem;
   cursor: pointer;
   position: relative;
-  margin: 0 5px;
 }
 
 .btn.hover-animated {
@@ -46,7 +46,7 @@
 }
 
 .btn-secondary {
-  background-color: var(--secondary-color);
+  background-color: var(--secondary-color) !important;
 }
 
 .poppins-light {
@@ -89,4 +89,8 @@
   font-family: "Poppins", serif;
   font-weight: 400;
   font-style: italic;
+}
+
+.text-center {
+  text-align: center;
 }

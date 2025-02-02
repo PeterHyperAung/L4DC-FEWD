@@ -11,10 +11,11 @@
     />
     <link rel="stylesheet" href="../css/globals.css" />
     <link rel="stylesheet" href="../css/layout.css" />
-    <link rel="stylesheet" href="../css/coffee-selection.css" />
     <link rel="stylesheet" href="../css/grid.css" />
     <link rel="stylesheet" href="../css/slideshow.css" />
     <link rel="stylesheet" href="../css/utility.css" />
+    <link rel="stylesheet" href="../css/coffee-selection.css" />
+    <link rel="stylesheet" href="../css/toast.css" />
     <title>Document</title>
   </head>
   <body class="poppins-regular">
@@ -44,7 +45,7 @@
             >
           </li>
           <li>
-            <a href="./brewing-equipment.html" class="nav-link active"
+            <a href="./brewing-equipment.html" class="nav-link animated"
               >Brewing Equipment</a
             >
           </li>
@@ -66,34 +67,46 @@
     </div>
     <!-- NAVBAR END -->
 
-    <!-- HERO SECTION START -->
-    <header class="header">
-      <div class="overlay"></div>
-      <div class="header-content">
-        <h1>Check out our high quality brewing equipment</h1>
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged.
+    <section class="details-section" id="details-section">
+      <h2 class="sub-heading">Product Details</h2>
+      <img
+        src="../images/coffee-1.jpg"
+        alt=""
+        class="details-img"
+        id="details-img"
+      />
+      <div class="details-content">
+        <h3 class="details-title">Coffee</h3>
+        <p class="details-description"></p>
+        <p class="details-price-container">
+          Price - <span id="details-price"></span>
         </p>
-        <div class="centered-content">
-          <div class="search">
-            <a href="#" class="search-icon-container">
-              <img
-                src="../images/search.svg"
-                alt="search icon"
-                class="search-icon"
-              />
-            </a>
-            <input type="text" placeholder="Search..." class="search-input" />
-          </div>
+        <div class="details-list-container">
+          <span class="details-list-title">Tasting Notes</span>
+          <ul id="details-tasting" class="details-list"></ul>
         </div>
+        <p class="details-device-container">
+          Device <br />
+          - <span id="details-device"></span>
+        </p>
+        <div class="details-list-container">
+          <p class="details-list-title">Components</p>
+          <ul id="details-component" class="details-list"></ul>
+        </div>
+        <div class="details-list-container">
+          <p class="details-list-title">Steps</p>
+          <ul id="details-step" class="details-list ordered-list"></ul>
+        </div>
+        <button id="add-to-cart" class="btn btn-primary">
+          <img src="../images/cart-white.svg" alt="" class="cart-icon" />
+          Add to cart
+        </button>
       </div>
-    </header>
-    <!-- HERO SECTION END -->
+    </section>
+
+    <div class="toast" id="toast">
+      <p>Item added to cart</p>
+    </div>
 
     <!-- FOOTER START -->
     <div class="footer-wrapper">
@@ -154,7 +167,8 @@
     </div>
     <!-- FOOTER END -->
 
-    <script src="../js/script.js"></script>
     <script src="../js/navbar.js"></script>
+    <script src="../js/product.js"></script>
+    <script src="../js/product-details.js"></script>
   </body>
 </html>

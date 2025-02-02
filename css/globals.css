@@ -11,22 +11,18 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  width: 100vw;
-  overflow-x: hidden;
-  color: #333;
-}
-
 :root {
   --primary-color: #b82132;
   --secondary-color: #d2665a;
-  --tertitary-color: #f2b28c;
-  --white-color: #f6ded8;
+  --danger-color: #bb2124;
+  --white-color: #f6f8fa;
 }
 
-section {
-  max-width: 1980px;
-  margin: 0 auto;
+body {
+  width: 100vw !important;
+  overflow-x: hidden;
+  color: #333;
+  background-color: var(--white-color);
 }
 
 section {
