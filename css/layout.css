@@ -82,7 +82,8 @@ header .header-content p {
   margin-bottom: 24px;
 }
 
-section {
+section,
+main {
   margin: 120px 0;
 }
 
