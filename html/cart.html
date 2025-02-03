@@ -23,7 +23,7 @@
   <div class="nav-wrapper">
     <nav>
       <div class="logo-container">
-        <img src="../images/logo.png" alt="Bean Boutique site logo" height="40px">
+        <img src="../images/logo.png" alt="Bean Boutique site logo" height="40">
         Bean Boutique
       </div>
       <div id="navbar-menu-toggle">
@@ -72,16 +72,17 @@
         </thead>
         <tbody id="cart-body"></tbody>
         <tfoot>
-          <td colspan="4">Total</td>
-          <td>$<span id="total-price">0</span></td>
+          <tr>
+            <td colspan="4">Total</td>
+            <td>$<span id="total-price">0</span></td>
+            <td></td>
+          </tr>
         </tfoot>
       </table>
     </section>
     <div class="checkout-btn-container">
-      <a href="./index.html">
-        <button id="checkout-btn" class="btn btn-primary checkout-btn">
-          Check Out
-        </button>
+      <a href="./index.html" id="checkout-btn" class="btn btn-primary checkout-btn">
+        Check Out
       </a>
     </div>
   </main>
