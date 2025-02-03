@@ -105,48 +105,76 @@
   <!-- FEATURED SECTION START -->
   <section>
     <h2 class="sub-heading">Featured</h2>
-    <div class="slideshow" aria-label="Gallery">
-      <ol class="slideshow__viewport">
-        <li id="slideshow__slide1" tabindex="0" class="slideshow__slide">
-          <div class="slideshow__slide-content">
-            <img src="" alt="">
-            <div>
-              <h3>Product</h3>
-              <p></p>
+    <div class="slideshow">
+
+      <button class="slideshow-arrow-container left" id="slideshow-prev">
+        <img src="../images/left.svg" alt="Previous arrow icon" class="slideshow-arrow">
+      </button>
+
+      <button class="slideshow-arrow-container right" id="slideshow-next">
+        <img src="../images/right.svg" alt="Next arrow icon" class="slideshow-arrow">
+      </button>
+
+      <div class="slideshow-view">
+        <div class="slideshow-container" id="slideshow-slide">
+          <div class="slideshow-item">
+            <img src="../images/brew-3.jpg" alt="" class="slideshow-img">
+            <div class="slideshow-content">
+              <div>
+                <h4 class="slideshow-title">Expresso Maker</h4>
+                <p class="slideshow-description">Designed for those who love bold, strong shots, espresso makers deliver
+                  café-quality espresso with
+                  high-pressure brewing systems. Many models have steam wands for frothing milk, perfect for lattes and
+                  cappuccinos.`,
+                </p>
+              </div>
+              <div class="sm-screen-mt-2">
+                <a class="btn btn-primary inline-block">See more</a>
+              </div>
             </div>
           </div>
-          <div class="slideshow__snapper">
-            <a href="#slideshow__slide3" class="slideshow__prev">Go to last slide</a>
-            <a href="#slideshow__slide2" class="slideshow__next">Go to next slide</a>
+          <div class="slideshow-item">
+            <img src="../images/brew-3.jpg" alt="" class="slideshow-img">
+            <div class="slideshow-content">
+              <div>
+                <h4 class="slideshow-title">Expresso Maker</h4>
+                <p class="slideshow-description">Designed for those who love bold, strong shots, espresso makers deliver
+                  café-quality espresso with
+                  high-pressure brewing systems. Many models have steam wands for frothing milk, perfect for lattes and
+                  cappuccinos.`,
+                </p>
+              </div>
+              <div class="sm-screen-mt-2">
+                <a class="btn btn-primary inline-block">See more</a>
+              </div>
+            </div>
           </div>
-        </li>
-        <li id="slideshow__slide2" tabindex="0" class="slideshow__slide">
-          <div class="slideshow__slide-content">I'm just testing</div>
-          <div class="slideshow__snapper"></div>
-          <a href="#slideshow__slide1" class="slideshow__prev">Go to previous slide</a>
-          <a href="#slideshow__slide3" class="slideshow__next">Go to next slide</a>
-        </li>
-        <li id="slideshow__slide3" tabindex="0" class="slideshow__slide">
-          <div class="slideshow__slide-content">I'm just testing</div>
-          <div class="slideshow__snapper"></div>
-          <a href="#slideshow__slide2" class="slideshow__prev">Go to previous slide</a>
-          <a href="#slideshow__slide1" class="slideshow__next">Go to next slide</a>
-        </li>
-      </ol>
-      <aside class="slideshow__navigation">
-        <ol class="slideshow__navigation-list">
-          <li class="slideshow__navigation-item">
-            <a href="#slideshow__slide1" class="slideshow__navigation-button">Go to slide 1</a>
-          </li>
-          <li class="slideshow__navigation-item">
-            <a href="#slideshow__slide2" class="slideshow__navigation-button">Go to slide 2</a>
-          </li>
-          <li class="slideshow__navigation-item">
-            <a href="#slideshow__slide3" class="slideshow__navigation-button">Go to slide 3</a>
-          </li>
-        </ol>
-      </aside>
+          <div class="slideshow-item">
+            <img src="../images/brew-3.jpg" alt="" class="slideshow-img">
+            <div class="slideshow-content">
+              <div>
+                <h4 class="slideshow-title">Expresso Maker</h4>
+                <p class="slideshow-description">Designed for those who love bold, strong shots, espresso makers deliver
+                  café-quality espresso with
+                  high-pressure brewing systems. Many models have steam wands for frothing milk, perfect for lattes and
+                  cappuccinos.`,
+                </p>
+              </div>
+              <div class="sm-screen-mt-2">
+                <a class="btn btn-primary inline-block">See more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="indicators">
+        <div class="slideshow-indicator" id="indicator-1"></div>
+        <div class="slideshow-indicator" id="indicator-2"></div>
+        <div class="slideshow-indicator" id="indicator-3"></div>
+      </div>
     </div>
+
   </section>
   <!-- FEATURED SECTION END -->
 
@@ -374,6 +402,7 @@
   <!-- FOOTER END -->
 
   <script src="../js/script.js"></script>
+  <script src="../js/slideshow.js"></script>
   <script src="../js/navbar.js"></script>
 </body>
 
