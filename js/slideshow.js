@@ -2,6 +2,7 @@ let currentSlide = 1;
 
 const slideEl = document.getElementById("slideshow-slide");
 const indicatorsList = document.querySelectorAll(".slideshow-indicator");
+indicatorsList[0].classList.add("slideshow--indicator-active");
 
 document
   .getElementById("slideshow-prev")
